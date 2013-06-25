@@ -1,10 +1,12 @@
 require 'bundler/capistrano' # for bundler support
 
 set :application, "studentbody"
+
 set :repository,  "git@github.com:jmlcampbell/sinatra_student_server.git"
 
 set :user, 'jmlcampbell'
 set :deploy_to, "/home/#{user}/#{application}"
+
 set :use_sudo, false
 
 set :scm, :git
